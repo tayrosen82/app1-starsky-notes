@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>星空体育 · 快速识别与平台导览</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #f2f4f6;
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+      line-height: 1.6;
+      color: #1e2a3a;
+      padding: 2rem 1rem;
+    }
+
+    .page-wrap {
+      max-width: 880px;
+      margin: 0 auto;
+    }
+
+    /* 卡片式设计，浅灰背景 + 细边框 + 柔和阴影 */
+    .card {
+      background: #ffffff;
+      border: 1px solid #e2e6ea;
+      border-radius: 20px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04), 0 1px 3px rgba(0, 0, 0, 0.02);
+      padding: 2.2rem 1.8rem;
+      margin-bottom: 1.8rem;
+      transition: box-shadow 0.2s ease;
+    }
+
+    .card:hover {
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+    }
+
+    /* 标题体系 */
+    .hero-title {
+      font-size: 2rem;
+      font-weight: 500;
+      letter-spacing: -0.01em;
+      margin-bottom: 1rem;
+      color: #121926;
+    }
+
+    .hero-sub {
+      font-size: 1.15rem;
+      color: #475569;
+      max-width: 600px;
+    }
+
+    .section-head {
+      font-size: 1.3rem;
+      font-weight: 500;
+      margin-bottom: 1.2rem;
+      color: #1e2a3a;
+      border-left: 4px solid #7c8b9f;
+      padding-left: 1rem;
+    }
+
+    p {
+      margin-bottom: 1rem;
+      color: #2a3b4f;
+    }
+
+    .intro-highlight {
+      background: #f8faff;
+      border-radius: 14px;
+      padding: 1.2rem 1.5rem;
+      margin: 1.2rem 0;
+      border: 1px solid #e4e9f0;
+    }
+
+    /* 特点列表 —— 故事式小卡片 */
+    .feature-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.2rem;
+      margin: 1.5rem 0 0.8rem;
+    }
+
+    .feature-item {
+      flex: 1 1 180px;
+      background: #f7f9fc;
+      border-radius: 16px;
+      padding: 1.2rem 1rem;
+      border: 1px solid #dee4ed;
+      transition: background 0.2s;
+    }
+
+    .feature-item:hover {
+      background: #edf2f9;
+    }
+
+    .feature-item h4 {
+      font-size: 1rem;
+      font-weight: 500;
+      margin-bottom: 0.4rem;
+      color: #1d2b3f;
+    }
+
+    .feature-item p {
+      font-size: 0.9rem;
+      color: #4a5b71;
+      margin-bottom: 0;
+    }
+
+    /* 温和提示块 */
+    .note-box {
+      background: #f3f6fb;
+      border-left: 3px solid #8b9bb0;
+      padding: 1.2rem 1.5rem;
+      border-radius: 12px;
+      margin: 1.5rem 0;
+      font-size: 0.95rem;
+      color: #2b3b4e;
+    }
+
+    .link-sentence {
+      font-weight: 500;
+    }
+
+    a {
+      color: #2c5282;
+      text-decoration: none;
+      border-bottom: 1px dotted #a0b4cc;
+      transition: border-bottom 0.15s, color 0.15s;
+    }
+
+    a:hover {
+      color: #1a3a5e;
+      border-bottom: 1px solid #1a3a5e;
+    }
+
+    .end-note {
+      margin-top: 1rem;
+      font-size: 0.95rem;
+      color: #55677d;
+    }
+
+    hr.soft {
+      border: none;
+      border-top: 1px solid #e0e6ed;
+      margin: 1.6rem 0 1.2rem;
+    }
+
+    /* 响应式细节 */
+    @media (max-width: 600px) {
+      body {
+        padding: 1.2rem 0.8rem;
+      }
+
+      .card {
+        padding: 1.6rem 1.2rem;
+      }
+
+      .hero-title {
+        font-size: 1.6rem;
+      }
+
+      .feature-grid {
+        flex-direction: column;
+        gap: 1rem;
+      }
+
+      .feature-item {
+        flex: 1 1 auto;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="page-wrap">
+
+  <!-- 开场短句 hero -->
+  <div class="card">
+    <h1 class="hero-title">一个地方，读懂星空体育</h1>
+    <div class="hero-sub">
+      如果你正在寻找一个整合体育资讯、赛事动态与社区讨论的平台，<br class="hide-on-mobile"> 
+      下面这些内容能帮你快速判断它是否符合你的使用习惯。
+    </div>
+  </div>
+
+  <!-- 承接段落：从用户视角说明网站用途 -->
+  <div class="card">
+    <h2 class="section-head">如何快速识别这个平台</h2>
+    <p>
+      当你第一次打开 <a href="https://app1-starsky.com">星空体育</a>，最先感受到的往往不是复杂的功能堆叠，
+      而是一种围绕“体育内容”展开的信息结构。它不像传统新闻门户那样追求大而全，
+      而是更侧重<span class="link-sentence">赛事数据、即时比分、以及用户之间的讨论场景</span>。
+      如果你习惯于先扫一眼首页的布局来判断一个网站是否值得深入，那么这里的设计逻辑是：
+      把最常被查询的联赛、重点关注队伍和实时动态放在显眼位置，减少翻找成本。
+    </p>
+    <div class="intro-highlight">
+      <p style="margin-bottom: 0.3rem;"><strong>一句话概括：</strong></p>
+      <p style="margin-bottom: 0;">它是为那些希望快速获取体育信息、参与话题交流的用户准备的集中式页面，<br>
+      不绕弯子，不堆无关内容。</p>
+    </div>
+  </div>
+
+  <!-- 特点列表：故事式小卡片，自然承接上一段 -->
+  <div class="card">
+    <h2 class="section-head">你会注意到的几个特点</h2>
+    <p style="margin-bottom: 0.6rem;">在实际使用中，下面这些细节可能让你觉得“就是它了”：</p>
+    <div class="feature-grid">
+      <div class="feature-item">
+        <h4>⚡ 信息优先级</h4>
+        <p>焦点赛事、实时比分、热门讨论会优先呈现，而不是被广告或杂项干扰。</p>
+      </div>
+      <div class="feature-item">
+        <h4>📋 分类索引</h4>
+        <p>足球、篮球、网球等主流项目各自有清晰的分区，可以快速定位到你想看的板块。</p>
+      </div>
+      <div class="feature-item">
+        <h4>💬 社区痕迹</h4>
+        <p>每条动态或比赛下方常有用户留言，氛围偏向理性讨论，适合交流观点。</p>
+      </div>
+      <div class="feature-item">
+        <h4>📱 响应适配</h4>
+        <p>在手机浏览器上布局会重新排列，阅读和点按都不太费力，移动端体验自然。</p>
+      </div>
+    </div>
+    <p style="margin-top: 1rem; font-size: 0.95rem; color: #4a5b71;">
+      当然，这些只是初次接触时的直观感受。真正是否顺手，还取决于你习惯怎样消费体育内容。
+    </p>
+  </div>
+
+  <!-- 温和的场景提示 + 类似FAQ摘要 -->
+  <div class="card">
+    <h2 class="section-head">你可能想问的两个小问题</h2>
+    <div style="margin-bottom: 1rem;">
+      <p><strong>“我第一次用，需要注册才能浏览吗？”</strong><br>
+      大部分内容（比如赛事列表、比分、资讯摘要）在未登录状态下就可以查看。部分互动功能（如发表评论或收藏队伍）可能需要一个账号，具体可以在页面右上角找到入口。</p>
+    </div>
+    <div>
+      <p><strong>“信息更新及时吗？会不会滞后很久？”</strong><br>
+      根据多数使用者的反馈，实时比分和关键事件推送的延迟基本控制在几十秒以内，日常资讯的发布节奏也比较稳定。如果你对时效性要求极高，可以留意页面上的时间戳。</p>
+    </div>
+    <div class="note-box">
+      💡 小提示：刚进入网站时，可以先留意导航栏的「热门」或「进行中」标签，那里通常聚合了当前关注度最高的内容。
+    </div>
+  </div>
+
+  <!-- 温和结尾：再次自然嵌入链接，不突兀 -->
+  <div class="card" style="text-align: left;">
+    <hr class="soft">
+    <p class="end-note">
+      无论是开始探索某个联赛，还是想看看别人对某场比赛的看法，<a href="https://app1-starsky.com">星空体育</a> 都提供了一个相对干净的信息起点。
+      花几分钟熟悉一下布局，也许它就会成为你日常获取体育动态的一个参考站点。
+    </p>
+    <p class="end-note" style="margin-top: 0.2rem;">
+      —— 以上内容基于平台公开界面整理，不构成任何保证或推荐。
+    </p>
+  </div>
+
+</div>
+</body>
+</html>
